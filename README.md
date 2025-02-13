@@ -64,7 +64,7 @@ spring.jpa.hibernate.ddl-auto=update
 ```bash
 ./mvnw spring-boot:run
 ```
-- **The backend will run on http://localhost:8080**
+- **The backend will run on http://localhost:8081**
   
 - *Frontend Setup*
 - **Navigate to the frontend directory**
