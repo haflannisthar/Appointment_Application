@@ -45,6 +45,7 @@ git clone https://github.com/haflannisthar/Appointment_Application.git
 cd Appointment_Application
 ```
 - **Navigate to the backend directory**
+    *Backend Setup*
 ```bash
 cd backend
 ```
@@ -52,13 +53,47 @@ cd backend
 ```bash
 ./mvnw install
 ```
-- **Configure your MySQL database connection in src/main/resources/application.properties**
+- **Configure your MySQL database connection  in src/main/resources/application.properties**
 ```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/appointmentapp
 spring.datasource.username=your_database_username
 spring.datasource.password=your_database_password
 spring.jpa.hibernate.ddl-auto=update
 ```
+- **Start the Spring Boot application**
+```bash
+./mvnw spring-boot:run
+```
+- **The backend will run on http://localhost:8080**
+  
+- *Frontend Setup*
+- **Navigate to the frontend directory**
+```bash
+cd frontend
+```
+- **Install frontend dependencies**
+```bash
+npm install
+```
+- **Start the React development server**
+```bash
+npm run dev
+```
+- **The frontend will run on http://localhost:5173.**
+
+### 4. Verify the Ports
+- **Backend: The Spring Boot backend will be running on port 8081**
+- **Frontend: The React app will be running on port 5173.**
+- **MySQL: The MySQL database will be running on port 3306.**
+
+### 5. Test the Application
+- **After both the backend and frontend are running, open your browser and navigate to http://localhost:5173.**
+- **You should be able to:**
+   - Register a new user.
+   - Log in to your account.
+   - View, Book and cancel appointments (as a user and admin ).
+   - View and create appointments (as an admin).
+  
 
 
 
