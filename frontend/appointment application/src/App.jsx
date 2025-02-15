@@ -6,6 +6,7 @@ import PrivateRoute from "./Components/PrivateRoute.jsx";
 import Dashboard from './Components/Dashboard'
 import { AuthContext } from './Context/AuthContext'
 import { useContext, useEffect } from 'react';
+import ResetPassword from './Components/ResetPassword.jsx';
 
 
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
             </Route>
       </Routes>
+      <Route path='/reset' element={<ResetPassword/>}/>
     </div>
   )
 }
