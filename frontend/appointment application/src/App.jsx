@@ -29,8 +29,9 @@ function App() {
       <Route element={<PrivateRoute />}>
                 <Route path="/dashboard" element={<Dashboard />} />
             </Route>
+        <Route path='/reset' element={<ResetPassword/>}/>
       </Routes>
-      <Route path='/reset' element={<ResetPassword/>}/>
+      
     </div>
   )
 }
